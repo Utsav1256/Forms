@@ -6,53 +6,28 @@
 	<title>Log In</title>
 </head>
 <body>
-
+<!--  form is used for collectin data -->
 	<form>
 
-		<!-- input tag is an inline tag -->
-		<!-- so we put them inside div, so that they will be in next line :) -->
 		<div>
-			<label for="username"> Username </label>
-			<!-- this label tag has an attribue called 'for', in this for we need to tell for which element is this label for. -->
-			<input type="text" id="username"> 
-			<!-- type indicates what type of input do you want to take. -->
-			<!-- what id does is , it helps us identify an element uniquly -->
+			<label for="email"> Email </label> <br>
+			<input type="email" name="email" id="email"> 
 		</div>
 		<div>
-			<label for="password"> Password </label>
-			<input type="password" id="password"> 
+			<label for="country"> Country </label> <br>
+			<input type="country" name="password" value="India" id="country"> 
 		</div>
+		<div>
+			<label for="password"> Password </label> <br>
+			<input type="password" name="password" id="password"> 
+		</div> <br>
+		<div>
+			<label for="fun"> Want to submit? </label> <br>
+			<input type="text" name="fun" value="yes" id="fun" disabled> <!-- if it is disabled -> you can't edit it -->
+		</div> <br>
 		<div>
 			<input type="submit"> 
 		</div>
-
-		
-		<p> Different input type : </p>
-		<div>
-			<label> email </label>
-			<input type="email" placeholder="abc@example.com"> 
-		</div>
-		<div>
-			<label> number </label>
-			<input type="number"> 
-		</div>
-		<div>
-			<label> time </label>
-			<input type="time"> 
-		</div>
-		<div>
-			<label> url </label>
-			<input type="url"> 
-		</div>
-		<div>
-			<label> range </label>
-			<input type="range" min="10" max="100" step="10"> <!--  one slide = 10 units  -->
-		</div>
-		<div>
-			<label> Password </label>
-			<input type="password"> 
-		</div>
-
 
 	</form>
 
